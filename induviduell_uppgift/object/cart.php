@@ -85,9 +85,10 @@ class Cart {
 
             $worked = $statementHandler->execute();
 
+            // True = order complete
             if ($worked === true) {
-                echo "Order complete! <br />";
                 echo "<a href='../index.php'>Back btn</a> <br />";
+                echo "Order complete! <br />";
             } else {
                 echo "Error with insert to database";
             }
@@ -106,8 +107,9 @@ class Cart {
 
             $worked =$statementHandler->execute();
 
+            // if true, empty the cart else error
             if ($worked === true) {
-                echo "successfully emptied cart after checkout! <br />";
+                //echo "successfully emptied cart after checkout! <br />";
             } else {
                 echo "Error with the removal of cart in database";
             }

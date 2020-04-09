@@ -7,7 +7,13 @@
     <title>ecom page</title>
 </head>
 <body>
-    <div id="app" style="border:solid 1px red;">
+    <style>
+        hr {
+            border: solid 1px blue;
+        }
+    </style>
+    <div id="app" style="padding: 16px; box-shadow:0px 2px 4px #00000052">
+    <h1>Index page</h1>
     <?php
 
         $page = (isset($_GET['page']) ? $_GET['page'] : '');
@@ -15,32 +21,31 @@
             echo "Product created!";
         }
 
-
-        echo "inside app div";
-
         include("pages/registerForm.php");
         echo "<br />";
 
         include("pages/loginForm.php");
         echo "<br />";
 
+        // Demostrating that you can include and also just echo out HTML code
+
         echo "<h2>Admin View</h2>";
         echo "<form action='http://192.168.64.2/induviduell_uppgift/pages/adminView.php' method='POST'>";
-        echo "<input type='text' name='token' placeholder='token..'>";
+        echo "<input type='text' name='token' placeholder='token..' required>";
         echo "<input type='submit' value='submit and see list'> ";
-        echo "</form>  <br /> ";
+        echo "</form>  <hr /> ";
 
         echo "<h2>All Products</h2>";
         echo "<form action='http://192.168.64.2/induviduell_uppgift/products/listProducts.php' method='POST'>";
-        echo "<input type='text' name='token' placeholder='token..'>";
+        echo "<input type='text' name='token' placeholder='token..' required>";
         echo "<input type='submit' value='submit and see list'> ";
-        echo "</form>  <br /> ";
+        echo "</form>  <hr /> ";
 
         echo "<h2> View your cart </h2>";
         echo "<form action='http://192.168.64.2/induviduell_uppgift/cart/cartViewer.php' method='POST'>";
-        echo "<input type='text' name='token' placeholder='token..'>";
+        echo "<input type='text' name='token' placeholder='token..' required>";
         echo "<input type='submit' value='submit and see list'> ";
-        echo "</form>  <br /> ";
+        echo "</form>  <hr /> ";
 
     ?>
     </div>

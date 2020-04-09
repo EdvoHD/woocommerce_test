@@ -13,7 +13,7 @@ if(!empty($_POST['token'])) {
     if(!empty($_POST['id'])) { 
 
        
-echo $cart_handler->addToCart( $_POST['token'], $_POST['id']);
+        echo $cart_handler->addToCart( $_POST['token'], $_POST['id']);
 
     } else {
         echo "Invalid id!";

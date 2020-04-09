@@ -19,7 +19,6 @@ if (!empty($_GET['token'])) {
         if ($user_handler->validateToken($token) === false) {
             $return_object = new stdClass;
             $return_object->error = "Token not valid";
-            $return_object->errorCode = 1338;
             echo json_encode($return_object);
             die;
         }
@@ -28,8 +27,7 @@ if (!empty($_GET['token'])) {
 
     } else {
         $return_object = new stdClass;
-        $return_object->error = "invalid id u cunt";
-        $return_object->errorCode = 1111;
+        $return_object->error = "invalid id";
 
         echo json_encode($return_object);
     }
@@ -37,12 +35,12 @@ if (!empty($_GET['token'])) {
 } else {
     $return_object = new stdClass;
     $return_object->error = "no token found!";
-    $return_object->errorCode = 1231;
 
     echo json_encode($return_object);
 }
-echo "Updated!";
-echo "<a href='../index.php'>back btn</a>";
+
+echo "<a href='../index.php'>back btn</a> <br />";
+echo " Product Updated!";
 
 
 ?>

@@ -13,9 +13,9 @@ echo "<h2>Product ID: <i>" . $productID . "</i></h2>";
 <form action="../cart/addToCart.php" method="POST">
 
 <p>Token:</p>
-<input type="text" name="token" placeholder="token.." /><br />
+<input type="text" name="token" placeholder="token.." required /><br />
 <p>Product ID:</p>
-<input type="text" name="id" placeholder="Product id.." /><br />
+<input type="text" name="id" placeholder="Product id.." required /><br />
 
 <p>
 <input type="submit" name="Add"/>
