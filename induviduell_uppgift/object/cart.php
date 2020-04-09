@@ -64,8 +64,9 @@ class Cart {
             $worked = $statementHandler->execute();
 
             if ($worked === true) {
-                echo "$cartID emptied!";
-                echo "<a href='../index.php'>Back btn</a>";
+
+                echo "<a href='../index.php'>Back btn</a> <br/>";
+                echo "item removed from cart!";
 
             } else {
                 echo "Error with deletion!";
