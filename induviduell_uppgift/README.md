@@ -5,6 +5,7 @@ Ladda ner projektet.
 Starta igång XAMPP
 
 Öppna PhPmyadmin och importera in SQL filen så du får likadan databas-struktur.
+**"ecom.sql"**
 Öppna 'index.php' 
 Utgå ifrån Index-sidan.
 
