@@ -1,6 +1,6 @@
 # Induviduell uppgift
 
-## How to use:
+## How to use: ##
 Ladda ner projektet.
 Starta igång XAMPP
 
@@ -9,9 +9,9 @@ Starta igång XAMPP
 Utgå ifrån Index-sidan.
 
 **Två användare finns redan skapade. "admin" & "user".**
-*Lösenord: "123";*
-**Users** kan logga in, se produkter, lägga till produkter i kundvagn och beställa produkter.
-**Admin** kan allt som users kan men även delete, edit och create produkter.
+- *Lösenord: "123";*
+- **Users** kan logga in, se produkter, lägga till produkter i kundvagn och beställa produkter.
+- **Admin** kan allt som users kan men även delete, edit och create produkter.
 
 Testa logga in med någon av dessa eller skapa en egen användare.
 
